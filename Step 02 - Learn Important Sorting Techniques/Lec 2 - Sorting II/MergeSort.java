@@ -5,8 +5,7 @@ public class MergeSort {
        mergeSort(arr,0,4);
        for (int i : arr) {
         System.out.print(i+ " ");
-       }
-       
+       } 
     }
     public static void mergeSort(int arr[], int l, int r) {
         if(l>=r) 
