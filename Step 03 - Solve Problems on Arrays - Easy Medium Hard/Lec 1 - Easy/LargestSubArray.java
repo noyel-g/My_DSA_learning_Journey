@@ -38,8 +38,8 @@ public static void main(String[] args) {
 		return max;
 	}
     
-}
-/*  using prefix sum only (use if array only have positive numbers)
+}    
+/*  in this we use prefix sum only (use if array only have positive numbers)
 public int longestSubarray(int[] arr, int num) {
        int len=arr.length;
        int [] prefix  =new int[len];
