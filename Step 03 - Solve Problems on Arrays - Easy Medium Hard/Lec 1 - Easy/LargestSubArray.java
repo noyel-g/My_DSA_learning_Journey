@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 /**
- * LargestSubArray
+ * LargestSubArray gives sum k using prefix sum + HashMap(if array having negetive numbers)
  */
 public class LargestSubArray {
 public static void main(String[] args) {
@@ -39,3 +39,31 @@ public static void main(String[] args) {
 	}
     
 }
+/*  using prefix sum only (use if array only have positive numbers)
+public int longestSubarray(int[] arr, int num) {
+       int len=arr.length;
+       int [] prefix  =new int[len];
+        prefix[0]= arr[0];
+        for(int i=1;i<len;i++){
+            prefix[i]=prefix[i-1]+arr[i];
+        }
+        for(int i=len;i>0;i--){
+            for(int j=0;j<len-i+1;j++){
+                 int sum=0;
+                 int end = j + i - 1;
+                // for(int k=j;k<i+j;k++){
+                     //sum=sum+arr[k];
+                     if(j==0){
+                        sum=prefix[end];
+                    } else{ 
+                    sum=prefix[end]-prefix[j-1];}
+               //  }
+                 if(sum==num){
+                     return i;
+                 }
+            }
+        }
+        return 0;
+    }
+
+*/
