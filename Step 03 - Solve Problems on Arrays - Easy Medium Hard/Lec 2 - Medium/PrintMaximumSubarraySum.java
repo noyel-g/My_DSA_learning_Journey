@@ -1,3 +1,5 @@
+
+//updated version of MaximumSubArraySum here instead of finding the sum we print the subarray which gives max sum
 public class PrintMaximumSubarraySum {
     public static void main(String[] args) {
        int [] arr={-1,-1,1,0,1};//array must have majority element else it will fail
